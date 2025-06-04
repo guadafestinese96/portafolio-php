@@ -1,6 +1,36 @@
-<?php require 'header.php'?>
+<?php require 'header.php' ?>
 <div class="contactContainer">
-  <h1>Contacto</h1>
-  <p>Este es el contenido de la sección contacto.</p>
+  <h2>Enviar email</h2>
+  <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" class="formulario">
+    <div class="labelInput">
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" value="<?php if(!$enviado && isset($nombre)) echo $nombre ?>" placeholder="Ingresa tu nombre:">
+    </div>
+
+    <div class="labelInput">
+      <label for="email">Email</label>
+      <input type="email" name="email" value="<?php if(!$enviado && isset($email)) echo $email ?>"  placeholder="Ingresa tu email:">
+    </div>
+
+    <div class="labelInput">
+      <label for="mensaje">Mensaje</label>
+      <textarea name="mensaje" placeholder="Mensaje:"><?php if(!$enviado && isset($mensaje)) echo $mensaje ?></textarea>
+    </div>
+
+    
+      <?php if (!empty($errores)): ?>
+				<div class="alert error" role="alert">
+					<?php echo $errores; ?>
+				</div>
+			<?php elseif($enviado) : ?>
+				<div class="alert success" role="alert">
+					<?php echo 'Enviado Correctamente'; ?>
+				</div>
+			<?php endif; ?>
+    
+
+    <input type="submit" name="submit" value="Enviar Mensaje" class="btnSubmit">
+
+  </form>
 </div>
-<?php require 'footer.php'?>
+<?php require 'footer.php' ?>
