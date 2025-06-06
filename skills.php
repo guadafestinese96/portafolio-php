@@ -1,11 +1,13 @@
 <?php
 require_once 'config.php'; 
+$conexion = conectar_db($bd_config);
+if($conexion){
+    $skills_design = get_skills_by_type($conexion, 'design');
+    $skills_fram_lib = get_skills_by_type($conexion, 'fram-lib');
+    $skills_lang = get_skills_by_type($conexion, 'languajes');
+    $skills_tools = get_skills_by_type($conexion, 'tools');
+}
 
-$carpeta = "images/skills/";
-$images_design = glob($carpeta . 'design-layout/' . '*.{jpg,png}', GLOB_BRACE);
-$images_frameworks  = glob($carpeta . 'frameworks-libraries/' . '*.{jpg,png}', GLOB_BRACE);
-$images_programming  = glob($carpeta . 'programming-languages/' . '*.{jpg,png}', GLOB_BRACE);
-$images_tools  = glob($carpeta . 'tools-technologies/' . '*.{jpg,png}', GLOB_BRACE);
 
 require 'views/skills.view.php';
 

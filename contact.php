@@ -4,9 +4,6 @@ require_once 'config.php';
 $errores = '';
 $enviado = '';
 
-// if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-//     echo "se enviaron por post";
-// }
 
 if (isset($_POST['submit'])) {
     $nombre = $_POST['nombre'];
@@ -33,10 +30,10 @@ if (isset($_POST['submit'])) {
 
     if(!$errores){
         $enviar_a = 'widistoreok@gmail.com';
-        $asunto = 'Correo desde mipagina.com';
+        $asunto = 'Correo desde mi portafolio';
         $mensaje_enviado = "Nombre: $nombre \n Email: $email \n Mensaje: $mensaje";
 
-        //mail($enviar_a, $asunto, $mensaje);
+        mail($enviar_a, $asunto, $mensaje);
         $enviado = 'true';
     }
 }

@@ -1,17 +1,16 @@
-*{
-    list-style: none;
-    text-decoration: none;
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-body{
-    background-color: var(--color-gris-muy-claro);
-    font-family: 'Figtree', sans-serif;
-    
+body {
+  background-color: var(--color-gris-muy-claro);
 }
 
 :root {
@@ -24,22 +23,19 @@ body{
   --color-azul-oscuro: #008ecc;
 }
 
-.main{
+.main {
   display: flex;
   justify-content: center;
   padding-bottom: 70px;
-
-  @media(max-width:900px){
-    padding-bottom: 100px;
-  }
 }
 
-.title{
-  text-transform: uppercase;
+.title {
+  text-transform: capitalize;
   margin: 20px;
+  font-size: 30px;
 }
 
-.container{
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,94 +44,69 @@ body{
 }
 
 /*HEADER*/
-header{
-    background-color: black;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    height: 90px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-
-    @media(max-width:750px){
-    height: 120px;
-    }
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  height: 90px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.logoHeader{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    border: 5px solid #000;
+.logoHeader {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid #000;
 }
 
-.logoHeader:hover{
+.logoHeader:hover {
   border: 5px solid var(--color-azul-oscuro);
 }
 
-.listas{
+.listas {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media(max-width:750px){
-    flex-direction: column;
-    height: 50px;
-    justify-content: space-between;
-    }
 }
 
-.sections, .contactIcons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sections,
+.contactIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-.sections li a, .contactIcons li a{
-    color: white;
-    margin: 15px;
-    font-size: 25px;
-
-    @media(max-width:750px){
-    font-size: 15px;
-    margin: unset;
-    margin: 5px;
-    }
+.aHeader {
+  color: white;
+  margin: 15px;
+  font-size: 25px;
 }
 
-.sections li a:hover, .contactIcons li a:hover{
-    color: var(--color-azul-oscuro);
-    transition: 1s;
+.aHeader:hover {
+  color: var(--color-azul-oscuro);
+  transition: 1s;
 }
-
-
 
 /*FOOTER*/
-.footer{
-    background-color: var(--color-gris-palido);
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 50px;
-    color: var(--color-gris-oscuro);
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
-
-    @media(max-width:750px){
-    flex-direction: column;
-    height: 70px;
-    justify-content: space-around;
-    }
+.footer {
+  background-color: var(--color-gris-palido);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  color: var(--color-gris-oscuro);
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.sectionsFooter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sectionsFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sectionsFooter li a {
@@ -144,71 +115,74 @@ header{
   font-weight: bold;
 }
 
-.sectionsFooter li a:hover{
+.sectionsFooter li a:hover {
   color: var(--color-azul-oscuro);
 }
 
 /*INDEX*/
-.inicio{
-  display: flex;
-  justify-content: center;
-  align-items:flex-start;
-  background-color: var(--color-blanco);
-  padding-top: 10px;
-}
-
-.imgIndex{
-    width: 100px;
-}
-
-.containerImgGuada{
-  width: 60%;
-}
-
-.imgGuada{
+.container.inicio {
   width: 100%;
 }
 
-
-.webDevContainer{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 20%;
-  padding-top: 30px;
+.white{
+  background-color: var(--color-blanco);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.web{
-  font-size: 50px;
+.titleGuada {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.imgIndex {
+  width: 150px;
+}
+
+.containerImgGuada {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgGuada {
+  width: 60%;
+}
+
+.webDevContainer {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.web {
+  font-size: 40px;
   color: #ffa500;
   font-weight: bold;
-  margin-right: 10px;
-
-  @media(max-width:750px){
-    font-size: 30px;
-  }
+  margin-left: 8px;
 }
 
-.dev{
-  font-size: 30px;
+.dev {
+  font-size: 25px;
+  margin-left: 5px;
   text-transform: capitalize;
-  @media(max-width:750px){
-    font-size: 15px;
-  }
 }
 
-.guadaLogoIndexContainer{
-  width: 20%;
+.about {
+  width: 80%;
+  text-align: center;
 }
 
-.guadaLogoIndex{
-  width: 200px;
-  
+.about p {
+  font-size: 18px;
+  color: var(--color-gris-oscuro);
 }
 
 /*SKILLS*/
 
-.allSkills{
+.allSkills {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,11 +200,7 @@ header{
   justify-content: center;
   align-items: center;
   margin: 8px;
-
-  @media(max-width:900px){
-    width: 50px;
-    height: 50px;
-  }
+  box-shadow: 1px 1px 10px var(--color-gris-claro);
 }
 
 .skillImg {
@@ -238,68 +208,129 @@ header{
   background-color: #fff;
 }
 
-.skillName{
-  font-size: 15px;
-  @media(max-width:550px){
-    font-size: 12px;
-  }
+.skillName {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #008ecc;
 }
 
-.container.skillsContainer{
-  background-color: var(--color-gris-palido);
-  border-radius: 10px;
-  padding: 5px;
-  box-shadow: 1px 1px 10px var(--color-gris-claro);
-  width: 810px;
-  margin: 10px;
-
-  @media(max-width:900px){
-    width: 550px;
-  }
-
-  @media(max-width:600px){
-    width: 290px;
-  }
+.skillExperience {
+  text-transform: capitalize;
+  font-size: 10px;
 }
 
-.title.titleSkills{
-  color: var(--color-azul-oscuro);
+
+
+/*SKILLS*/
+.skills-section {
+  padding: 3rem 2rem;
+  background-color: #f7f7f7;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
 }
 
-.container.softSkillsContainer{
-  background-color: var(--color-gris-palido);
-  width: 810px;
-  border-radius: 10px;
-  box-shadow: 1px 1px 10px var(--color-gris-claro);
-  padding: 5px;
+.section-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 2.5rem;
+  color: #111;
+  font-weight: 700;
+}
 
-  @media(max-width:900px){
-    width: 550px;
-  }
+.category {
+  margin-bottom: 3rem;
+}
 
-  @media(max-width:600px){
-    width: 290px;
-  }
+.category-title {
+  font-size: 1.8rem;
+  color: #007acc;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 130px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.skill-icon img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.5rem;
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.3rem;
+}
+
+.skill-level {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/*soft*/
+.softSkillsContainer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
 }
 
 .soft-skills {
   list-style: none;
   padding: 0;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .soft-skills li {
-  margin: 10px 0;
-  font-size: 1.1rem;
-
-  @media(max-width:550px){
-    font-size: 14px;
-  }
+  background: #ffffff;
+  border-left: 4px solid #007acc;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.soft-skills i {
-  color: var(--color-azul-oscuro);
-  margin-right: 10px;
+.soft-skills li i {
+  color: #007acc;
+  font-size: 1.3rem;
 }
+
+.soft-skills li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+
 
 /*CONTACT*/
 .contactContainer {
@@ -309,116 +340,305 @@ header{
 }
 
 /*ESTUDIOS*/
-.estudiosImagesContainer{
+.allStudies {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.containerEstudiosImg{
-  width: 500px;
-  height: 350px;
+.containerEstudios {
+  width: 550px;
   margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: var(--color-blanco);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 1px 1px 10px var(--color-gris-claro);
-  
 }
-.estudiosImg{
-  width:100%;
-  height: 100%;
+.estudiosImg {
+  width: 500px;
+  height: 350px;
+  margin: 10px;
   border-radius: 10px;
+}
+
+.titleStudy {
+  font-size: 20px;
+  text-align: left;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--color-azul-oscuro);
+}
+
+.yearStudy {
+  text-align: left;
+  width: 100%;
+  margin: 5px 0px 5px 0px;
+  color: var(--color-gris-oscuro);
+}
+
+.descriptionStudy {
+  text-align: left;
+  color: var(--color-gris-claro);
+}
+
+.containerLinkStudy {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.containerLinkStudy a i {
+  margin-left: 5px;
+}
+
+.rightArrow {
+  color: var(--color-azul-oscuro);
+  font-weight: bold;
+}
+
+.rightArrow:hover {
+  color: var(--color-gris-oscuro);
+  cursor: pointer;
+  transition: 1s;
 }
 
 /*FORMULARIO*/
-.formulario{
+.formulario {
+  margin-top: 20px;
   background-color: var(--color-blanco);
   display: flex;
   flex-direction: column;
-
   width: 500px;
   padding: 20px;
   border-radius: 10px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    box-shadow: 1px 1px 10px var(--color-gris-claro);
 }
 
-.labelInput{
+.emailIcon{
+  font-size: 30px;
+  text-align: right;
+}
+
+.labelInput {
   text-align: left;
   margin-bottom: 10px;
 }
 
-.labelInput label{
+.labelInput label {
   font-size: 18px;
   color: var(--color-gris-oscuro);
   font-weight: bold;
 }
 
-.formulario input[type="text"], .formulario input[type="email"], .formulario textarea{
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   border: none;
   filter: drop-shadow(1px 1px 1px black);
   margin-top: 5px;
   font-size: 16px;
 }
 
-.formulario textarea{
+.formulario textarea {
   height: 200px;
   resize: none;
   overflow-y: hidden;
 }
 
-.btnSubmit{
+.btnSubmit {
   background-color: var(--color-azul);
   padding: 5px;
   border: none;
   border-radius: 5px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin:10px 0px 10px 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 10px 0px 10px 0px;
   font-weight: bold;
   font-size: 18px;
 }
 
-.btnSubmit:hover{
+.btnSubmit:hover {
   cursor: pointer;
   background-color: var(--color-azul-oscuro);
   transition: 1s;
 }
 
 .alert {
-	padding: 1em;
-	color:#fff;
-	border-radius: 5px;
-	margin-bottom: 20px;
-	font-size: 14px;
+  padding: 1em;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
 .alert.error {
-	background: #a94442;
+  background: #a94442;
 }
 
 .alert.success {
-	background: #4CAF50;
+  background: #4caf50;
 }
 
 /*PROYECTOS*/
-.proyectosContainer{
+.proyectosContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
+.containerEstudios.projects{
+  height: 650px;
+  justify-content: space-between;
+}
+.links{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  flex-direction: column;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .main {
+    padding-bottom: 100px;
+  }
+
+  .title{
+    font-size: 25px;
+  }
+
+  /*HEADER*/
+  .header {
+    height: 120px;
+  }
+  .listas {
+    flex-direction: column;
+    height: 70px;
+    justify-content: space-between;
+  }
+
+  .liHeader .aHeader {
+    font-size: 15px;
+  }
+
+  /*FOOTER*/
+  .footer {
+    flex-direction: column;
+    height: 70px;
+    justify-content: space-around;
+  }
+
+  /*INDEX*/
+  .titleGuada {
+    font-size: 15px;
+  }
+
+  .imgGuada {
+    width: 100%;
+  }
+
+  .web {
+    font-size: 15px;
+  }
+
+  .dev {
+    font-size: 10px;
+  }
+
+  .about p{
+    font-size: 12px;
+  }
+
+  /*ESTUDIOS*/
+
+  .containerEstudios {
+    width: 290px;
+  }
+  .estudiosImg {
+    width: 260px;
+    height: 180px;
+  }
+
+  /*FORMULARIO*/
+  .formulario {
+    width: 290px;
+  }
+}
 
 
-/* #ffffff
-	#333333 gris oscuro
-    #777777 gris claro
-    #f4f4f4 gris muy claro
-    	#e0e0e0 gris palido
-        	#00aaff azul
-            	#008ecc azul oscuro */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+   /*HEADER*/
+  .header {
+    height: 120px;
+  }
+  .listas {
+    flex-direction: column;
+    height: 70px;
+    justify-content: space-between;
+  }
+
+  .liHeader .aHeader {
+    font-size: 20px;
+  }
+
+  /*INDEX*/
+  .titleGuada, .web{
+    font-size: 20px;
+  }
+
+  .dev{
+    font-size: 15px;
+  }
+
+  .imgGuada {
+    width: 100%;
+  }
+
+  .about p{
+    font-size: 15px;
+  }
+
+  /*ESTUDIOS*/
+  .containerEstudios {
+    width: 390px;
+  }
+  .estudiosImg {
+    width: 350px;
+    height: 220px;
+  }
+
+  /*FORMULARIO*/
+  .formulario {
+    width: 440px;
+  }
+
+  /*FOOTER*/
+  .footer {
+    flex-direction: column;
+    height: 70px;
+    justify-content: space-around;
+  }
+
+}
+
+
+
+
+
