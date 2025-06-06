@@ -1,11 +1,11 @@
 <?php require 'header.php'; ?>
 <div class="container">
 
-    <section class="skills-section">
-        <h2 class="section-title">Hard Skills</h2>
+    <div class="container">
+        <h2 class="title">Hard Skills</h2>
 
         <div class="category">
-            <h3 class="category-title">Programming Languages</h3>
+            <h3 class="titleSkill">Programming Languages</h3>
             <div class="skills-grid">
                 <?php foreach ($skills_lang as $skill): ?>
                     <div class="skill-card">
@@ -21,7 +21,7 @@
 
 
         <div class="category">
-            <h3 class="category-title">Design & Layout</h3>
+            <h3 class="titleSkill">Design & Layout</h3>
             <div class="skills-grid">
                 <?php foreach ($skills_design as $skill): ?>
                     <div class="skill-card">
@@ -36,7 +36,7 @@
         </div>
 
         <div class="category">
-            <h3 class="category-title">Frameworks & Libraries</h3>
+            <h3 class="titleSkill">Frameworks & Libraries</h3>
             <div class="skills-grid">
                 <?php foreach ($skills_fram_lib as $skill): ?>
                     <div class="skill-card">
@@ -51,7 +51,7 @@
         </div>
 
         <div class="category">
-            <h3 class="category-title">Tools & Technologies</h3>
+            <h3 class="titleSkill">Tools & Technologies</h3>
             <div class="skills-grid">
                 <?php foreach ($skills_tools as $skill): ?>
                     <div class="skill-card">
@@ -64,7 +64,7 @@
                 <?php endforeach; ?>
             </div>
         </div>
-    </section>
+    </div>
 
 
 

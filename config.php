@@ -1,19 +1,19 @@
 <?php
-if ($_SERVER['HTTP_HOST'] == 'localhost') {
-    define('RUTA', 'http://localhost/portafolio-php');
-} else {
+// if ($_SERVER['HTTP_HOST'] == 'localhost') {
+//     define('RUTA', 'http://localhost/portafolio-php');
+// } else {
     define('RUTA', 'https://guadalupefestinese.infinityfreeapp.com');
-}
+//}
 
 $bd_config = array(
-    'database' => 'portfolio',
-    'user' => 'root',
-    'pass' => ''
+    'database' => 'if0_39174617_portfolio',
+    'user' => 'if0_39174617',
+    'pass' => 's84obY8tKSIa'
 );
 
 function conectar_db($bd_config){
     try {
-        $conexion = new PDO('mysql:host=localhost;dbname=' . $bd_config['database'], $bd_config['user'], $bd_config['pass']);
+        $conexion = new PDO('mysql:host=sql113.infinityfree.com;dbname=' . $bd_config['database'] . ';charset=utf8mb4', $bd_config['user'], $bd_config['pass']);
         return $conexion;
     } catch (PDOException $e) {
         return false;

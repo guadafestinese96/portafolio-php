@@ -25,7 +25,7 @@
       </div>
     <?php elseif ($enviado) : ?>
       <div class="alert success" role="alert">
-        <?php echo 'Enviado Correctamente'; ?>
+        <?php echo 'Enviado Correctamente! (Por políticas del servidor gratuito no se puede enviar el correo, pero el código y validaciones están programadas como si lo hiciera.)'; ?>
       </div>
     <?php endif; ?>
 
