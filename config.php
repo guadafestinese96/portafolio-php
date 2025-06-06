@@ -1,9 +1,6 @@
 <?php
-// if ($_SERVER['HTTP_HOST'] == 'localhost') {
-//     define('RUTA', 'http://localhost/portafolio-php');
-// } else {
-    define('RUTA', 'https://guadalupefestinese.infinityfreeapp.com');
-//}
+define('RUTA', 'https://guadalupefestinese.infinityfreeapp.com');
+
 
 $bd_config = array(
     'database' => 'if0_39174617_portfolio',
