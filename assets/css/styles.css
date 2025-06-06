@@ -178,6 +178,7 @@ body {
 .about p {
   font-size: 18px;
   color: var(--color-gris-oscuro);
+  margin-bottom: 20px;
 }
 
 .download-btn {
