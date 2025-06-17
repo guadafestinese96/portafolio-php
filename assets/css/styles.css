@@ -84,9 +84,14 @@ body {
   font-size: 25px;
 }
 
+
 .aHeader:hover {
   color: var(--color-azul-oscuro);
   transition: 1s;
+}
+
+.aHeader i{
+  color: inherit;
 }
 
 /*FOOTER*/

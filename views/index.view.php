@@ -24,7 +24,7 @@
     </section>
 
     <div class="cv-container">
-    <a class="download-btn" href="<?php echo RUTA; ?>/cv/CV_FestineseGuadalupe_dev.pdf" download>
+    <a class="download-btn" href="<?php echo RUTA; ?>/cv/CV_Festinese_dev.pdf" download>
         Descargar CV
     </a>
 </div>

@@ -31,7 +31,7 @@ $messageEncoded = urlencode($message);
       </ul>
       <ul class="contactIcons">
         <li class="liHeader"><a href="<?php echo RUTA; ?>/contact.php" class="aHeader">contacto</a></li>
-        <li class="liHeader"><a href="https://www.linkedin.com/in/guadalupe-festinese-bb05b82a4" target="_blank" class="aHeader"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li class="liHeader"><a href="https://www.linkedin.com/in/guadalupe-festinese-bb05b82a4" target="_blank" class="aHeader"><i class="fa-brands fa-linkedin-in icons"></i></a></li>
         <li class="liHeader"><a href="https://github.com/guadafestinese96" target="_blank" class="aHeader"><i class="fa-brands fa-github icons"></i></a></li>
         <li class="liHeader">
           <a href="https://wa.me/<?php echo $phoneNumber; ?>?text=<?php echo $messageEncoded; ?>" target="_blank" class="aHeader"><i class="fa-brands fa-whatsapp icons"></i></a>
